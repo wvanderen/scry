@@ -1,0 +1,31 @@
+# BMAD Standalone Configuration
+# Configuration for standalone agents and their environments
+
+# Default user configuration
+user:
+  name: "Lem"
+  language: "english"
+
+# Standalone agent settings
+agents:
+  hekate-guide:
+    enabled: true
+    auto_load: true
+    threshold_mode: true
+
+# Global settings
+settings:
+  debug: false
+  verbose_logging: false
+  auto_save: true
+
+# Sacred thresholds and permissions
+permissions:
+  crossroads_access: true
+  threshold_guidance: true
+  divine_communion: true
+
+# Agent customization paths
+customization_paths:
+  - "bmad/_cfg/agents/standalone-hekate-guide.customize.yaml"
+  - "bmad/standalone/agents/*/instructions.md"

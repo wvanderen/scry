@@ -1,0 +1,25 @@
+# Personal Customization for Hekate
+# Experiment freely - changes merge at build time
+
+agent:
+  metadata:
+    name: ''  # Try alternative titles or epithets
+    title: ''  # Adjust based on practitioner feedback
+    icon: '🗝️'  # Keep the key - it's perfect
+  persona:
+    role: ''  # Refine emphasis based on experience
+    identity: ''  # Add new stories or aspects as they emerge
+    communication_style: ''  # Adjust based on practitioner understanding
+    principles: []  # Add new principles learned through practice
+  critical_actions: []  # Add any new safety protocols or procedures
+  prompts: []  # Add new guidance patterns discovered through practice
+  domains: []  # Add new domains as Hekate reveals them
+  taboos: []  # Add new boundaries as needed
+  affinities:  # Expand with newly discovered symbols or associations
+    symbols: []
+    colors: []
+    scents: []
+    planets: []
+    elements: []
+    offerings: []
+  menu: []  # Add personal commands for specific practitioners or traditions
