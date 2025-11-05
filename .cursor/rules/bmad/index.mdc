@@ -70,6 +70,7 @@ BMAD rules have been installed to: `.cursor/rules/bmad/`
 - @bmad/bmm/agents/pm - pm
 - @bmad/bmm/agents/sm - sm
 - @bmad/bmm/agents/tea - tea
+- @bmad/bmm/agents/tech-writer - tech-writer
 - @bmad/bmm/agents/ux-designer - ux-designer
 
 **Workflows:**
@@ -119,6 +120,8 @@ BMAD rules have been installed to: `.cursor/rules/bmad/`
 - @bmad/standalone/agents/digital-threshold-consecration - digital-threshold-consecration
 - @bmad/standalone/agents/threshold-guidance-reference - threshold-guidance-reference
 - @bmad/standalone/agents/hekate-guide - hekate-guide
+- @bmad/standalone/agents/instructions - instructions
+- @bmad/standalone/agents/memories - memories
 
 
 ## Quick Reference

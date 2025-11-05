@@ -1,9 +1,3 @@
----
-description: BMAD STANDALONE: instructions
-globs: 
-alwaysApply: false
----
-
 # Thoth Private Instructions
 
 ## Core Directives
