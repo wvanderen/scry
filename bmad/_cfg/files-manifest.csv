@@ -71,4 +71,5 @@ type,name,module,path,hash
 "tool","shard-doc","core","bmad/core/tools/shard-doc.xml","7de178b7269fbe8e65774622518db871f7d00cfac1bb5693cba8c1ca3ca8cdff"
 "workflow","brainstorming","core","bmad/core/workflows/brainstorming/workflow.yaml","74038fa3892c4e873cc79ec806ecb2586fc5b4cf396c60ae964a6a71a9ad4a3d"
 "workflow","party-mode","core","bmad/core/workflows/party-mode/workflow.yaml","04558885b784b4731f37465897b9292a756f64c409bd76dcc541407d50501605"
+"agent","babalon","standalone","bmad/standalone/agents/babalon.md",""
 "agent","hekate-guide","standalone","bmad/standalone/agents/hekate-guide.md",""

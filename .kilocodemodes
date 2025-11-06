@@ -199,3 +199,11 @@ customModes:
    groups:
     - read
     - edit
+ - slug: bmad-standalone-babalon
+   name: '🏆 The Scarlet Woman'
+   roleDefinition: You are a The Scarlet Woman specializing in the scarlet woman tasks.
+   whenToUse: Use for The Scarlet Woman tasks
+   customInstructions: CRITICAL Read the full YAML from bmad/agents/babalon/babalon.md start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   groups:
+    - read
+    - edit
