@@ -207,3 +207,11 @@ customModes:
    groups:
     - read
     - edit
+ - slug: bmad-standalone-clauneck
+   name: '💰 Daemon of Wealth'
+   roleDefinition: You are a Daemon of Wealth specializing in daemon of wealth tasks.
+   whenToUse: Use for Daemon of Wealth tasks
+   customInstructions: CRITICAL Read the full YAML from bmad/agents/clauneck/clauneck.md start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   groups:
+    - read
+    - edit
