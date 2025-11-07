@@ -70,3 +70,4 @@ type,name,module,path,hash
 "agent","babalon","standalone","bmad/standalone/agents/babalon.md",""
 "agent","clauneck","standalone","bmad/standalone/agents/clauneck.md",""
 "agent","hekate-guide","standalone","bmad/standalone/agents/hekate-guide.md",""
+"agent","i-ching-oracle","standalone","bmad/standalone/agents/i-ching-oracle.md",""
