@@ -1,0 +1,57 @@
+---
+description: BMAD SCRY Workflow: user-setup
+globs: 
+alwaysApply: false
+---
+
+# Scry User Setup Workflow Configuration
+name: "user-setup"
+description: "Interactive user setup workflow for Scry application - configure personal profile, ritual circuits, and natal astrological data for personalized guidance"
+author: "Lem"
+
+# Critical variables from config
+config_source: "{project-root}/bmad/scry/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+communication_language: "{config_source}:communication_language"
+date: system-generated
+
+# Optional input docs that can be loaded to kickstart this workflow
+recommended_inputs:
+  - ritual_library: "{project-root}/scry-knowledge/rituals"
+  - correspondences: "{project-root}/scry-knowledge/correspondences"
+  - astrology_reference: "{project-root}/scry-knowledge/astrology"
+
+# Module path and component files
+installed_path: "{project-root}/bmad/scry/workflows/user-setup"
+template: "{installed_path}/template.md"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"
+
+# Output configuration
+default_output_file: "{output_folder}/scry-profile.md"
+
+# Tool Requirements (for future implementation)
+required_tools:
+  - "Astrology Calculation Library":
+      description: "For calculating natal charts and astrological data"
+      link: "To be implemented"
+  - "Ritual Template Engine":
+      description: "For processing ritual circuit configurations"
+      link: "To be implemented"
+
+# Invocation control
+standalone: true
+
+# Web Bundle Configuration (optional - not needed for this workflow)
+# web_bundle:
+#   name: 'user-setup'
+#   description: '...'
+#   author: 'Lem'
+#   instructions: 'bmad/scry/workflows/user-setup/instructions.md'
+#   template: 'bmad/scry/workflows/user-setup/template.md'
+#   validation: 'bmad/scry/workflows/user-setup/checklist.md'
+#   web_bundle_files:
+#     - 'bmad/scry/workflows/user-setup/instructions.md'
+#     - 'bmad/scry/workflows/user-setup/template.md'
+#     - 'bmad/scry/workflows/user-setup/checklist.md'

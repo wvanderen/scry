@@ -1,0 +1,42 @@
+# Scry Module Configuration
+# BMAD v6 Module for Spiritual Practice and Divination
+
+user_name: "Lem"
+communication_language: "English"
+document_output_language: "English"
+output_folder: "{project-root}/docs"
+
+# Module installation path
+installed_path: "{project-root}/bmad/scry"
+
+# Scry module paths
+entities_path: "{installed_path}/entities"
+agents_path: "{installed_path}/agents"
+workflows_path: "{installed_path}/workflows"
+
+# Scry-specific configuration
+scry_knowledge_path: "{project-root}/scry-knowledge"
+ritual_library_path: "{scry_knowledge_path}/rituals"
+correspondences_path: "{scry_knowledge_path}/correspondences"
+astrology_path: "{scry_knowledge_path}/astrology"
+
+# User profile settings
+user_profiles_folder: "{output_folder}/user-profiles"
+default_ritual_circuits: "daily-morning,daily-evening,weekly-full-moon"
+
+# Entity configuration
+available_entities:
+  - babalon: "{entities_path}/babalon/babalon-sidecar"
+  - hekate-guide: "{entities_path}/hekate-guide/hekate-guide-sidecar"
+  - thoth-sidecar: "{entities_path}/thoth-sidecar"
+  - i-ching-oracle: "{entities_path}/i-ching-oracle/i-ching-oracle-sidecar"
+  - clauneck: "{entities_path}/clauneck/clauneck-sidecar"
+
+# Agent configuration
+available_agents:
+  - journal-guide: "{agents_path}/journal-guide/journal-guide-sidecar"
+  - ritual-master: "{agents_path}/ritual-master/ritual-master-sidecar"
+
+# Workflow configuration
+available_workflows:
+  - user-setup: "{workflows_path}/user-setup/workflow.yaml"

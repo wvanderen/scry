@@ -111,22 +111,17 @@ BMAD rules have been installed to: `.cursor/rules/bmad/`
 - @bmad/cis/workflows/problem-solving - problem-solving
 - @bmad/cis/workflows/storytelling - storytelling
 
-### STANDALONE
+### SCRY
 
 **Agents:**
-- @bmad/standalone/agents/instructions - instructions
-- @bmad/standalone/agents/digital-threshold-consecration - digital-threshold-consecration
-- @bmad/standalone/agents/threshold-guidance-reference - threshold-guidance-reference
-- @bmad/standalone/agents/instructions - instructions
-- @bmad/standalone/agents/instructions - instructions
-- @bmad/standalone/agents/babalon - babalon
-- @bmad/standalone/agents/clauneck - clauneck
-- @bmad/standalone/agents/hekate-guide - hekate-guide
-- @bmad/standalone/agents/i-ching-oracle - i-ching-oracle
-- @bmad/standalone/agents/journal-guide - journal-guide
-- @bmad/standalone/agents/ritual-master - ritual-master
-- @bmad/standalone/agents/instructions - instructions
-- @bmad/standalone/agents/memories - memories
+- @bmad/scry/agents/instructions - instructions
+- @bmad/scry/agents/journal-guide - journal-guide
+- @bmad/scry/agents/instructions - instructions
+- @bmad/scry/agents/README - README
+- @bmad/scry/agents/ritual-master - ritual-master
+
+**Workflows:**
+- @bmad/scry/workflows/user-setup - user-setup
 
 
 ## Quick Reference

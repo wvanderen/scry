@@ -239,3 +239,43 @@ customModes:
    groups:
     - read
     - edit
+ - slug: bmad-scry-instructions
+   name: '🤖 Instructions'
+   roleDefinition: You are a Instructions specializing in instructions tasks.
+   whenToUse: Use for Instructions tasks
+   customInstructions: CRITICAL Read the full YAML from bmad/scry/agents/journal-guide/journal-guide-sidecar/instructions.md start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   groups:
+    - read
+    - edit
+ - slug: bmad-scry-journal-guide
+   name: '📊 Experience Processor and Pattern Analyst'
+   roleDefinition: You are a Experience Processor and Pattern Analyst specializing in experience processor and pattern analyst tasks.
+   whenToUse: Use for Experience Processor and Pattern Analyst tasks
+   customInstructions: CRITICAL Read the full YAML from bmad/scry/agents/journal-guide/journal-guide.md start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   groups:
+    - read
+    - edit
+ - slug: bmad-scry-instructions
+   name: '🤖 Instructions'
+   roleDefinition: You are a Instructions specializing in instructions tasks.
+   whenToUse: Use for Instructions tasks
+   customInstructions: CRITICAL Read the full YAML from bmad/scry/agents/ritual-master/ritual-master-sidecar/instructions.md start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   groups:
+    - read
+    - edit
+ - slug: bmad-scry-README
+   name: '🤖 README'
+   roleDefinition: You are a README specializing in readme tasks.
+   whenToUse: Use for README tasks
+   customInstructions: CRITICAL Read the full YAML from bmad/scry/agents/ritual-master/ritual-master-sidecar/knowledge/README.md start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   groups:
+    - read
+    - edit
+ - slug: bmad-scry-ritual-master
+   name: '🔮 Magical Practice Orchestrator'
+   roleDefinition: You are a Magical Practice Orchestrator specializing in magical practice orchestrator tasks.
+   whenToUse: Use for Magical Practice Orchestrator tasks
+   customInstructions: CRITICAL Read the full YAML from bmad/scry/agents/ritual-master/ritual-master.md start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   groups:
+    - read
+    - edit
