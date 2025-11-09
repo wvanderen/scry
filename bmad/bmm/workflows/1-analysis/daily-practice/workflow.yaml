@@ -1,0 +1,247 @@
+workflow: Daily Practice Foundation
+description: Foundational daily spiritual practice workflow that coordinates multiple agents for complete ritual experience
+purpose: Establish consistent magical practice routine with proper timing, guidance, and integration
+
+workflow_metadata:
+  version: 1.0
+  level: 1  # Foundation Level
+  prerequisites:
+    - Basic understanding of ritual practice
+    - Quiet space for practice
+    - 15-30 minutes of uninterrupted time
+  duration: "15-30 minutes (basic), 20-45 minutes (full integration)"
+  optimal_timing:
+    - "Morning: Sun hour for energizing and daily alignment"
+    - "Evening: Moon hour for integration and restful preparation"
+    - "Consistency over perfect timing recommended for beginners"
+
+workflow_config:
+  workflow_type: sequential
+  parallel_agents: false
+  input_required: true
+
+workflow_sections:
+  setup:
+    description: "Daily practice initialization and timing assessment"
+    steps:
+      - type: user_input
+        title: "Daily Intention Setting"
+        description: "Clarify your focus for today's spiritual practice"
+        inputs:
+          - type: text
+            name: daily_intention
+            label: "What is your primary intention for today's practice?"
+            placeholder: "e.g., centering, energy boosting, emotional clarity, spiritual connection"
+          - type: select
+            name: practice_duration
+            label: "How much time do you have available?"
+            options:
+              - "15 minutes (essential only)"
+              - "20-25 minutes (standard)"
+              - "30+ minutes (full integration)"
+            default: "20-25 minutes (standard)"
+          - type: select
+            name: energy_level
+            label: "Current energy level?"
+            options:
+              - "High energy and ready for deep work"
+              - "Moderate energy, steady practice"
+              - "Low energy, need gentle approach"
+              - "Very low, need minimal practice"
+            default: "Moderate energy, steady practice"
+
+      - type: agent_call
+        agent: ritual-master
+        title: "Optimal Timing Assessment"
+        description: "Determine best timing and ritual approach for today"
+        context:
+          "Based on the practitioner's intention, available time, and energy level, assess optimal timing and suggest the most appropriate ritual approach for today's practice. Consider moon phase, planetary hour if available, and adapt intensity accordingly."
+
+      - type: agent_call
+        agent: ritual-master
+        title: "Ritual Structure Planning"
+        description: "Create personalized ritual sequence for today"
+        context:
+          "Design a complete ritual sequence that fits within the practitioner's available time and matches their energy level. Include preparation, main ritual work, and integration steps. Adapt complexity based on experience level and current needs."
+
+  preparation:
+    description: "Space preparation and practitioner readiness"
+    steps:
+      - type: agent_call
+        agent: ritual-master
+        title: "Space Consecration Guidance"
+        description: "Guide practitioner through creating sacred space"
+        context:
+          "Provide step-by-step guidance for preparing the ritual space, including any necessary clearing, altar setup, and environmental adjustments. Adapt based on available space and time constraints."
+
+      - type: agent_call
+        agent: ritual-master
+        title: "Personal Alignment and Centering"
+        description: "Prepare practitioner energetically for ritual work"
+        context:
+          "Guide the practitioner through grounding, centering, and energetic preparation for today's work. Adapt techniques based on their current energy level and experience."
+
+  main_practice:
+    description: "Core ritual work with agent coordination"
+    steps:
+      - type: agent_call
+        agent: ritual-master
+        title: "Ritual Orchestration"
+        description: "Lead practitioner through complete ritual sequence"
+        context:
+          "Execute the planned ritual sequence with clear, paced instructions. Include timing for vibrations, visualizations, and transitions between ritual elements. Monitor practitioner's readiness and adapt as needed."
+
+      - type: conditional
+        condition: "practitioner requests specific entity consultation"
+        true_branch:
+          - type: agent_call
+            agent: thoth
+            title: "Wisdom and Knowledge Consultation"
+            context:
+              "If the practitioner's intention relates to wisdom, understanding, or intellectual clarity, provide consultation and guidance during the ritual."
+            trigger: "wisdom, learning, understanding, knowledge, clarity requested"
+          - type: agent_call
+            agent: hekate
+            title: "Magical Operation Guidance"
+            context:
+              "If the practitioner needs guidance with magical work, transitions, or liminal experiences, provide specialized consultation."
+            trigger: "magical work, transitions, crossroads, liminal, shadow work requested"
+          - type: agent_call
+            agent: clauneck
+            title: "Practical Results Consultation"
+            context:
+              "If the practitioner needs guidance with material manifestation or practical outcomes, provide consultation."
+            trigger: "practical results, manifestation, business, career, money requested"
+
+  integration:
+    description: "Post-ritual processing and experience capture"
+    steps:
+      - type: agent_call
+        agent: ritual-master
+        title: "Energy Balancing and Grounding"
+        description: "Ensure proper integration of ritual energies"
+        context:
+          "Guide the practitioner through energy balancing, grounding, and integration techniques appropriate to the work completed. Adapt intensity based on the depth of the ritual and practitioner's current state."
+
+      - type: agent_call
+        agent: journal-guide
+        title: "Experience Capture and Reflection"
+        description: "Help practitioner process and document their experience"
+        context:
+          "Guide the practitioner through capturing their ritual experience using appropriate journaling methods. Ask questions that help them process the physical, emotional, mental, and spiritual aspects of their practice."
+
+  follow_up:
+    description: "Pattern recognition and future planning"
+    steps:
+      - type: agent_call
+        agent: journal-guide
+        title: "Pattern Recognition and Insights"
+        description: "Identify patterns and provide guidance for future practices"
+        context:
+          "Analyze today's experience in relation to previous practices if available. Identify patterns in timing, effectiveness, energy states, and results. Provide insights for optimizing future practices."
+
+      - type: agent_call
+        agent: ritual-master
+        title: "Practice Recommendations and Planning"
+        description: "Provide guidance for next practice session"
+        context:
+          "Based on today's results and patterns, suggest optimal timing and focus for the next practice. Consider practitioner's progress, energy patterns, and long-term goals."
+
+output:
+  type: structured_result
+  sections:
+    practice_summary:
+      title: "Daily Practice Summary"
+      content_type: narrative
+      description: "Summary of the ritual performed and immediate results"
+
+    experience_insights:
+      title: "Experience Insights"
+      content_type: narrative
+      description: "Key insights and processing from the journal guide"
+
+    pattern_observations:
+      title: "Pattern Observations"
+      content_type: analysis
+      description: "Patterns noticed and their significance"
+
+    next_recommendations:
+      title: "Next Practice Recommendations"
+      content_type: guidance
+      description: "Specific recommendations for upcoming practice sessions"
+
+integration:
+  dependencies:
+    - ritual-master (primary coordinator)
+    - journal-guide (experience processing and pattern analysis)
+    - thoth (optional consultation)
+    - hekate (optional consultation)
+    - clauneck (optional consultation)
+
+  data_flow:
+    - User intention → Ritual assessment → Personalized planning
+    - Ritual execution → Entity consultation (if requested)
+    - Experience capture → Pattern analysis → Future planning
+    - All steps coordinated through Ritual Master
+
+  success_metrics:
+    immediate:
+      - Practitioner feels centered and aligned
+      - Ritual completed without overwhelming the practitioner
+      - Key experiences captured and processed
+      - Clear guidance provided for next session
+    ongoing:
+      - Consistency of daily practice establishment
+      - Progressive skill development
+      - Pattern recognition accuracy improvement
+      - Integration of insights into daily life
+
+error_handling:
+  time_constraints:
+    - "Essential elements only: Qabalistic Cross + LBRP + brief grounding"
+    - "Mental-only versions when physical space unavailable"
+    - "Pre-recorded guidance options for rushed situations"
+
+  energy_issues:
+    - "Gentler vibration techniques"
+    - "Shorter ritual duration"
+    - "Enhanced grounding and integration"
+    - "Focus on maintenance rather than development"
+
+  practice_difficulties:
+    - "Simplified ritual versions"
+    - "Enhanced guidance and support"
+    - "Alternative techniques for challenging elements"
+    - "Additional preparation and integration time"
+
+expansion_paths:
+  advanced_variations:
+    - "Extended ritual sequences for experienced practitioners"
+    - "Specialized entity work integration"
+    - "Advanced energy work and consciousness development"
+    - "Complex astrological timing optimization"
+
+  specialized_workflows:
+    - "Problem-solving focused practice sequences"
+    - "Healing and emotional work routines"
+    - "Prosperity and manifestation practices"
+    - "Psychic development and intuition building"
+
+success_criteria:
+  foundation:
+    - "Establishes consistent daily practice habit"
+    - "Provides solid ritual foundation for all other work"
+    - "Creates pattern tracking baseline for development"
+    - "Integrates multiple specialized agents effectively"
+
+  practitioner_benefits:
+    - "Increased daily energy and clarity"
+    - "Improved emotional regulation and resilience"
+    - "Developed ritual skills and confidence"
+    - "Enhanced intuition and spiritual connection"
+
+  system_integration:
+    - "Demonstrates effective agent coordination"
+    - "Shows practical value of knowledge systems"
+    - "Creates usable pattern for other workflows"
+    - "Validates Phase 1 prototype approach"

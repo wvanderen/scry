@@ -9,3 +9,27 @@ user_name: Lem
 communication_language: English
 document_output_language: English
 output_folder: '{project-root}/docs'
+
+# Agent Configuration
+agents:
+  - name: "thoth"
+    type: "sidecar"
+    path: "thoth-sidecar"
+    description: "Ancient Egyptian deity of wisdom and knowledge"
+  - name: "hekate-guide"
+    type: "standalone"
+    description: "Greek goddess of magic, crossroads, and transformation"
+  - name: "clauneck"
+    type: "sidecar"
+    path: "clauneck-sidecar"
+    description: "Daemon of wealth, prosperity, and material manifestation"
+  - name: "babalon"
+    type: "sidecar"
+    path: "babalon-sidecar"
+    description: "The Scarlet Woman, principle of love and transformation"
+  - name: "ritual-master"
+    type: "standalone"
+    description: "Orchestrates complete magical practices and ritual sequences"
+  - name: "journal-guide"
+    type: "standalone"
+    description: "Helps process experiences and analyze practice patterns"

@@ -1,0 +1,120 @@
+# Scry - The Ultimate Magical Practice System
+# Main entry point command for the Scry spiritual practice system
+
+name: scry
+display_name: "🌟 Scry - Magical Practice Portal"
+description: "Complete AI-powered spiritual practice system with entity consultations, rituals, and pattern analysis"
+
+category: spiritual-practice
+tags: [magical-practice, ritual, entities, wisdom, transformation]
+version: 1.0.0
+
+# Main workflow that serves as entry point
+main_workflow: "bmad:bmm:workflows:1-analysis:scry-portal"
+
+# Quick access commands
+quick_commands:
+  daily_practice: "bmad:bmm:workflows:1-analysis:daily-practice"
+
+  # Entity consultations
+  consult_thoth: "bmad:bmm:agents:thoth"
+  consult_hekate: "bmad:bmm:agents:hekate-guide"
+  consult_clauneck: "bmad:bmm:agents:clauneck"
+  consult_babalon: "bmad:bmm:agents:babalon"
+
+  # Support agents
+  journal_guide: "bmad:bmm:agents:journal-guide"
+  ritual_master: "bmad:bmm:agents:ritual-master"
+
+# System description for help
+long_description: |
+  Scry is a comprehensive AI-powered spiritual practice system that combines ancient esoteric wisdom with cutting-edge artificial intelligence.
+
+  ## Core Features
+
+  🧘‍♀️ **Personalized Daily Practice**: Complete ritual sequences adapted to your needs and schedule
+
+  🔮 **Spiritual Entity Consultations**: Direct access to Thoth (wisdom), Hekate (magic), Clauneck (prosperity), and Babalon (transformation)
+
+  📚 **Complete Knowledge Systems**: Traditional correspondences, ritual instructions, and astrological timing
+
+  📊 **Pattern Analysis**: Track your spiritual development and optimize your practice
+
+  ## Getting Started
+
+  Simply type `/scry` to open the main portal, or use quick commands for specific needs.
+
+# Feature highlights
+features:
+  - "Multi-agent coordination for complete magical practices"
+  - "Adaptive rituals for all experience levels"
+  "Timing optimization with astrological integration"
+  "Comprehensive esoteric knowledge base"
+  "Pattern recognition for personal development"
+  "Safe, ethical magical practice guidance"
+
+# Use cases
+use_cases:
+  - "Daily spiritual practice and meditation"
+  - "Learning and wisdom seeking"
+  - "Magical operations and spellwork"
+  - "Prosperity and manifestation work"
+  - "Spiritual development and transformation"
+  - "Ritual planning and coordination"
+
+# Entry points
+entry_points:
+  - command: "/scry"
+    description: "Open main Scry portal with all options"
+    type: "main"
+
+  - command: "/scry:daily"
+    description: "Quick access to daily practice routine"
+    type: "quick"
+    workflow: "bmad:bmm:workflows:1-analysis:daily-practice"
+
+# Agent list for reference
+available_agents:
+  ritual_master:
+    role: "Primary coordinator for magical practices"
+    expertise: ["Ritual orchestration", "Safety protocols", "Timing optimization"]
+    use_when: "Planning or executing ritual sequences"
+
+  journal_guide:
+    role: "Experience processing and pattern analysis"
+    expertise: ["Spiritual development", "Pattern recognition", "Integration support"]
+    use_when: "Processing experiences or analyzing practice patterns"
+
+  thoth:
+    role: "Wisdom and knowledge keeper"
+    expertise: ["Ancient wisdom", "Hermetic philosophy", "Intellectual clarity"]
+    use_when: "Seeking wisdom, learning, or understanding"
+
+  hekate_guide:
+    role: "Magical operations guide"
+    expertise: ["Spellcraft", "Transitions", "Shadow work", "Crossroads"]
+    use_when: "Magical workings or life transitions"
+
+  clauneck:
+    role: "Prosperity and manifestation guide"
+    expertise: ["Material success", "Business strategy", "Practical results"]
+    use_when: "Financial or business magical work"
+
+  babalon:
+    role: "Transformation and love principle"
+    expertise: ["Spiritual evolution", "Emotional healing", "Creative inspiration"]
+    use_when: "Transformation work or creative endeavors"
+
+# Safety information
+safety_info:
+  - "All practices include safety protocols and grounding techniques"
+  - "Adaptations available for all experience levels and constraints"
+  - "Professional help recommended for mental health concerns"
+  - "Practices designed to support, not replace, professional care"
+
+# Ethical guidelines
+ethics:
+  - "Respect for individual spiritual paths and timing"
+  - "No claims of supernatural powers or guaranteed results"
+  - "Encouragement of personal responsibility and empowerment"
+  - "Commitment to privacy and confidentiality"

@@ -117,10 +117,14 @@ BMAD rules have been installed to: `.cursor/rules/bmad/`
 - @bmad/standalone/agents/instructions - instructions
 - @bmad/standalone/agents/digital-threshold-consecration - digital-threshold-consecration
 - @bmad/standalone/agents/threshold-guidance-reference - threshold-guidance-reference
+- @bmad/standalone/agents/instructions - instructions
+- @bmad/standalone/agents/instructions - instructions
 - @bmad/standalone/agents/babalon - babalon
 - @bmad/standalone/agents/clauneck - clauneck
 - @bmad/standalone/agents/hekate-guide - hekate-guide
 - @bmad/standalone/agents/i-ching-oracle - i-ching-oracle
+- @bmad/standalone/agents/journal-guide - journal-guide
+- @bmad/standalone/agents/ritual-master - ritual-master
 - @bmad/standalone/agents/instructions - instructions
 - @bmad/standalone/agents/memories - memories
 

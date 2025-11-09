@@ -1,0 +1,246 @@
+# Planetary Hours Calculator and Correspondences
+# Essential for ritual timing and electional astrology
+# Based on Chaldean order of the planets
+
+# Planetary Hour System
+# Each day and night is divided into 12 planetary hours
+# Planetary rulership follows a specific sequence
+# Each hour is ruled by a different planet, bringing its influence
+
+planetary_sequence:
+  # The Chaldean Order - traditional sequence of planetary rulership
+  order: ["Saturn", "Jupiter", "Mars", "Sun", "Venus", "Mercury", "Moon"]
+
+  # Correspondences for advanced timing
+  chaldean_order_significance:
+    saturn: "Limitation, structure, karma, endings"
+    jupiter: "Expansion, wisdom, abundance, growth"
+    mars: "Action, courage, conflict, protection"
+    sun: "Success, recognition, leadership, healing"
+    venus: "Love, beauty, harmony, creativity"
+    mercury: "Communication, learning, travel, magic"
+    moon: "Intuition, emotion, psychic work, cycles"
+
+# Day and Hour Rulership
+day_rulers:
+  sunday: "Sun"
+  monday: "Moon"
+  tuesday: "Mars"
+  wednesday: "Mercury"
+  thursday: "Jupiter"
+  friday: "Venus"
+  saturday: "Saturn"
+
+# Planetary Hour Calculations
+# Each planetary hour = (daylight duration or night duration) / 12
+# Hour length changes throughout the year based on daylight hours
+
+hour_calculation:
+  method: "Varies by location and season"
+  example_calculation: |
+    "If sunrise is 6:00 AM and sunset is 6:00 PM:
+     Daylight duration = 12 hours
+     Each daylight hour = 60 minutes
+     Each nighttime hour = 60 minutes
+
+     If sunrise is 6:00 AM and sunset is 8:00 PM:
+     Daylight duration = 14 hours
+     Each daylight hour = 70 minutes
+     Each nighttime hour = 50 minutes"
+
+# Ritual Timing Recommendations
+optimal_timing:
+  success_recognition:
+    - "Sun hour on Sunday (double solar influence)"
+    - "Sun hour on Thursday (Sun + Jupiter expansion)"
+    - "Sun hour on Friday (Sun + Venus enhancement)"
+
+  protection_banishing:
+    - "Saturn hour on Saturday (double Saturn influence)"
+    - "Mars hour on Tuesday (double Mars influence)"
+    - "Saturn hour on any day (strong boundaries)"
+
+  love_relationships:
+    - "Venus hour on Friday (double Venus influence)"
+    - "Venus hour on Monday (Venus + Moon emotion)"
+    - "Moon hour on Friday (Moon + Venus harmony)"
+
+  wisdom_learning:
+    - "Jupiter hour on Thursday (double Jupiter influence)"
+    - "Mercury hour on Wednesday (double Mercury influence)"
+    - "Jupiter hour on Wednesday (Jupiter + Mercury learning)"
+
+  psychic_intuition:
+    - "Moon hour on Monday (double Moon influence)"
+    - "Moon hour on Thursday (Moon + Jupiter expansion)"
+    - "Neptune hour (if using modern planets)"
+
+  communication_healing:
+    - "Mercury hour on Wednesday (double Mercury influence)"
+    - "Mercury hour on Sunday (Mercury + Sun clarity)"
+    - "Sun hour on Wednesday (Sun + Mercury expression)"
+
+# Planetary Hour Attributes
+planetary_attributes:
+  saturn_hours:
+    qualities: ["Structure", "Discipline", "Limitation", "Karma", "Endings", "Protection"]
+    good_for: ["Banishing", "Protection", "Discipline", "Structure", "Karmic work", "Organization"]
+    avoid_for: ["New beginnings", "Growth work", "Love spells", "Expansion"]
+    enhanced_by: ["Saturday", "Capricorn hour", "Aquarius hour"]
+
+  jupiter_hours:
+    qualities: ["Expansion", "Wisdom", "Abundance", "Growth", "Optimism", "Leadership"]
+    good_for: ["Success", "Prosperity", "Wisdom", "Teaching", "Legal matters", "Expansion"]
+    avoid_for: ["Restriction", "Endings", "Detailed work", "Banishing"]
+    enhanced_by: ["Thursday", "Sagittarius hour", "Pisces hour"]
+
+  mars_hours:
+    qualities: ["Action", "Courage", "Conflict", "Protection", "Energy", "Willpower"]
+    good_for: ["Protection", "Courage", "Conflict resolution", "Physical work", "Athletic performance"]
+    avoid_for: ["Healing", "Peace work", "Relationship harmony", "Diplomacy"]
+    enhanced_by: ["Tuesday", "Aries hour", "Scorpio hour"]
+
+  sun_hours:
+    qualities: ["Success", "Recognition", "Leadership", "Healing", "Will", "Consciousness"]
+    good_for: ["Success", "Recognition", "Leadership", "Healing", "Achievement", "Self-confidence"]
+    avoid_for: ["Hidden work", "Subtle magic", "Emotional processing"]
+    enhanced_by: ["Sunday", "Leo hour"]
+
+  venus_hours:
+    qualities: ["Love", "Beauty", "Harmony", "Creativity", "Pleasure", "Relationships"]
+    good_for: ["Love spells", "Beauty work", "Creativity", "Harmony", "Relationship work"]
+    avoid_for: ["Conflict", "Protection work", "Discipline", "Harsh magic"]
+    enhanced_by: ["Friday", "Taurus hour", "Libra hour"]
+
+  mercury_hours:
+    qualities: ["Communication", "Learning", "Travel", "Magic", "Adaptability", "Intellect"]
+    good_for: ["Communication", "Learning", "Travel", "Magic", "Business", "Technology"]
+    avoid_for: ["Emotional work", "Deep spiritual work", "Relationship healing"]
+    enhanced_by: ["Wednesday", "Gemini hour", "Virgo hour"]
+
+  moon_hours:
+    qualities: ["Intuition", "Emotion", "Psychic ability", "Cycles", "Nurturing", "Subconscious"]
+    good_for: ["Psychic work", "Emotional healing", "Dream work", "Intuition", "Home work"]
+    avoid_for: ["Rational decisions", "Business work", "Conflict resolution"]
+    enhanced_by: ["Monday", "Cancer hour"]
+
+# Combining Planetary Hours with Other Factors
+synergy_factors:
+  day_hour_ruler:
+    rule: "When day ruler matches hour ruler, influence is doubled"
+    examples:
+      - "Sun hour on Sunday = Maximum solar influence"
+      - "Venus hour on Friday = Maximum Venusian influence"
+      - "Saturn hour on Saturday = Maximum Saturnian influence"
+
+  moon_phase_modification:
+    new_moon: "Good for beginnings, planning, setting intentions"
+    waxing_moon: "Enhances growth, attraction, building energy"
+    full_moon: "Amplifies all magical work, peak power"
+    waning_moon: "Good for banishing, release, clearing work"
+
+  zodiac_sign_enhancement:
+    rule: "When zodiac sign ruling the hour matches planet's dignity, influence enhanced"
+    examples:
+      - "Saturn hour during Capricorn = Strong Saturn influence"
+      - "Jupiter hour during Sagittarius = Strong Jupiter influence"
+      - "Mars hour during Aries = Strong Mars influence"
+
+# Practical Application Guide
+timing_strategies:
+  for_success:
+    primary: "Sun hour on Sunday"
+    secondary: "Sun hour on Thursday or Friday"
+    tertiary: "Jupiter hour on Thursday"
+
+  for_love:
+    primary: "Venus hour on Friday"
+    secondary: "Moon hour on Friday or Monday"
+    tertiary: "Venus hour on Monday"
+
+  for_protection:
+    primary: "Saturn hour on Saturday"
+    secondary: "Mars hour on Tuesday"
+    tertiary: "Saturn hour on any day"
+
+  for_psychic_work:
+    primary: "Moon hour on Monday"
+    secondary: "Moon hour during full moon"
+    tertiary: "Neptune hour (modern)"
+
+  for_learning:
+    primary: "Mercury hour on Wednesday"
+    secondary: "Jupiter hour on Thursday"
+    tertiary: "Mercury hour during Mercury retrograde (for review)"
+
+# Planning Your Ritual Schedule
+planning_considerations:
+  personal_schedule: "Consider your energy levels throughout the day"
+  astrological_transits: "Check for major planetary transits affecting your chart"
+  weather_conditions: "Outdoor rituals need good weather, indoor provides flexibility"
+  energy_requirements: "Some rituals need more energy than others"
+  moon_phase: "Moon phase modifies all planetary hour influences"
+
+# Example Ritual Timing
+example_schedule:
+  morning_protection_ritual:
+    timing: "Saturn hour on Saturday morning"
+    moon_phase: "Waning moon for enhanced banishing"
+    preparation: "Begin 15 minutes before hour starts"
+    duration: "20-30 minutes within the hour"
+
+  evening_love_spell:
+    timing: "Venus hour on Friday evening"
+    moon_phase: "Waxing moon for attraction"
+    preparation: "Begin with relaxing bath or meditation"
+    duration: "30-45 minutes for full working"
+
+  business_meeting_preparation:
+    timing: "Mercury hour on Wednesday morning"
+    moon_phase: "Any phase, Mercury hour primary factor"
+    preparation: "30 minutes of focused magical work"
+    duration: "15-20 minutes before meeting"
+
+# Common Mistakes to Avoid
+timing_pitfalls:
+  rushing: "Don't rush to fit ritual into hour - quality over perfect timing"
+  ignoring_personal_factors: "Your energy and readiness matter more than perfect timing"
+  forgetting_basic_preparation: "Still need proper ritual preparation regardless of timing"
+  overcomplicating: "Start simple - planetary hours enhance, don't replace good practice"
+  ignoring_intuition: "Sometimes the 'wrong' hour feels right - trust your inner guidance
+
+# Recording Your Results
+tracking_system:
+  journal_entries:
+    - "Planetary hour used"
+    - "Moon phase and zodiac sign"
+    - "Ritual type and purpose"
+    - "Results and effectiveness"
+    - "Personal energy levels"
+    - "Environmental factors"
+    - "Insights and observations"
+
+  effectiveness_rating:
+    - "1-5 scale for ritual effectiveness"
+    - "Notes on what enhanced or diminished results"
+    - "Patterns emerging over time"
+    - "Personal timing discoveries"
+
+# Advanced Considerations
+advanced_timing:
+  personal_chart_harmony:
+    concept: "Planetary hours harmonious with your natal chart work better"
+    example: "Venus hour works especially well for Venus-dominant individuals"
+
+  planetary_retrogrades:
+    effect: "Retrograde planets in hour rulership create different energies"
+    mercury_retrograde: "Good for review, completion, revision"
+    venus_retrograde: "Good for self-love, healing, reevaluation"
+
+  magical_days:
+    concept: "Some days have special magical significance beyond planetary rulers"
+    examples:
+      - "Full moon days for peak magical power"
+      - "New moon days for new beginnings"
+      - "Solstices and equinoxes for seasonal work"
+      - "Personal birthdays for personal magical work"

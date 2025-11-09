@@ -1,0 +1,321 @@
+# Scry Knowledge System - 777 Foundation
+# Based on Crowley's Liber 777 with modern additions for practical ritual work
+
+# Base Number System - Foundation of all correspondences
+number_system:
+  0:
+    title: "The Absolute / The Veil"
+    hebrew: "AIN" (Nothing)
+    tarot: "The Fool"
+    element: "Spirit / Akasha"
+    planet: "Beyond the Planets"
+    correspondence: "The Unmanifest, Infinite Potential"
+
+  1:
+    title: "The Point / Unity"
+    hebrew: "KETHER" (Crown)
+    tarot: "The Magician"
+    element: "Air (highest)"
+    planet: "None (Primum Mobile)"
+    correspondence: "Unity, Divine Will, Original Thought"
+
+  2:
+    title: "The Line / Duality"
+    hebrew: "CHOKMAH" (Wisdom)
+    tarot: "The High Priestess"
+    element: "Fire (zodiacal)"
+    planet: "The Sphere of the Zodiac / Chokmah"
+    zodiac: "Pisces"
+    correspondence: "Wisdom, Pure Force, Divine Masculine"
+
+  3:
+    title: "The Plane / Understanding"
+    hebrew: "BINAH" (Understanding)
+    tarot: "The Empress"
+    element: "Water"
+    planet: "Saturn"
+    zodiac: "Aquarius"
+    correspondence: "Understanding, Form, Divine Feminine"
+
+  4:
+    title: "Solid Matter / Mercy"
+    hebrew: "CHESED" (Mercy)
+    tarot: "The Emperor"
+    element: "Fire (elemental)"
+    planet: "Jupiter"
+    zodiac: "Sagittarius"
+    correspondence: "Mercy, Authority, Expansion, Structure"
+
+  5:
+    title: "Motion / Severity"
+    hebrew: "GEBURAH" (Severity)
+    tarot: "The Hierophant"
+    element: "Earth (highest)"
+    planet: "Mars"
+    zodiac: "Scorpio"
+    correspondence: "Severity, Strength, Conflict, Courage"
+
+  6:
+    title: "Mind / Beauty"
+    hebrew: "TIPHARETH" (Beauty)
+    tarot: "The Lovers"
+    element: "Air (elemental)"
+    planet: "Sun"
+    zodiac: "Leo"
+    correspondence: "Beauty, Harmony, Consciousness, Heart Center"
+
+  7:
+    title: "Desire / Victory"
+    hebrew: "NETZACH" (Victory)
+    tarot: "The Chariot"
+    element: "Water (elemental)"
+    planet: "Venus"
+    zodiac: "Taurus"
+    correspondence: "Victory, Love, Art, Nature, Emotion"
+
+  8:
+    title: "Intellect / Foundation"
+    hebrew: "HOD" (Foundation)
+    tarot: "Strength / Lust"
+    element: "Mercury"
+    planet: "Mercury"
+    zodiac: "Virgo"
+    correspondence: "Intellect, Communication, Magic, Foundation"
+
+  9:
+    title: "Stability / The Kingdom"
+    hebrew: "YESOD" (Foundation)
+    tarot: "The Hermit"
+    element: "Moon"
+    planet: "Moon"
+    zodiac: "Cancer"
+    correspondence: "Foundation, Stability, Subconscious, Astral"
+
+  10:
+    title: "Manifestation / Kingdom"
+    hebrew: "MALKUTH" (Kingdom)
+    tarot: "The World / The Universe"
+    element: "Earth (elemental)"
+    planet: "The Four Elements"
+    zodiac: "All Signs"
+    correspondence: "Kingdom, Manifestation, Physical Reality"
+
+# Planetary Correspondences - Essential for timing and ritual enhancement
+planetary_correspondences:
+  saturn:
+    number: 3
+    hebrew: "BINAH"
+    tarot: "The Universe (World)"
+    element: "Earth"
+    zodiac: ["Capricorn", "Aquarius (traditional)"]
+    day: "Saturday"
+    hour_cycle: 1  # First hour of Saturn day
+    colors: ["Black", "Dark Brown", "Indigo"]
+    metals: ["Lead"]
+    stones: ["Onyx", "Black Tourmaline", "Obsidian", "Jet"]
+    herbs: ["Patchouli", "Myrrh", "Cypress", "Black Pepper", "Mandrake (root)"]
+    incenses: ["Myrrh", "Asafoetida", "Sulphur (limited use)"]
+    animals: ["Goat", "Crow", "Raven", "Skeleton"]
+    concepts: ["Limitation", "Structure", "Time", "Discipline", "Death/Rebirth", "Karma"]
+    ritual_types: ["Banishing", "Protection", "Structure", "Karmic Work", "Ancestral Work"]
+
+  jupiter:
+    number: 4
+    hebrew: "CHESED"
+    tarot: "Wheel of Fortune"
+    element: "Fire"
+    zodiac: ["Sagittarius", "Pisces (traditional)"]
+    day: "Thursday"
+    hour_cycle: 4  # Fourth hour of Jupiter day
+    colors: ["Blue", "Royal Purple", "Saffron"]
+    metals: ["Tin", "Bronze"]
+    stones: ["Lapis Lazuli", "Sapphire", "Blue Topaz", "Turquoise"]
+    herbs: ["Sage", "Cedar", "Oak", "Juniper", "Nutmeg", "Clove"]
+    incenses: ["Cedar", "Sage", "Frankincense (blended)"]
+    animals: ["Eagle", "Horse", "Ox", "Stag"]
+    concepts: ["Expansion", "Wisdom", "Authority", "Abundance", "Higher Learning", "Philosophy"]
+    ritual_types: ["Prosperity", "Success", "Wisdom", "Leadership", "Legal Matters", "Teaching"]
+
+  mars:
+    number: 5
+    hebrew: "GEBURAH"
+    tarot: "The Tower"
+    element: "Fire (active)"
+    zodiac: ["Aries", "Scorpio (traditional)"]
+    day: "Tuesday"
+    hour_cycle: 5  # Fifth hour of Mars day
+    colors: ["Red", "Scarlet", "Orange-Red"]
+    metals: ["Iron", "Steel"]
+    stones: ["Red Jasper", "Bloodstone", "Garnet", "Ruby"]
+    herbs: ["Cayenne", "Black Pepper", "Ginger", "Nettle", "Thistle"]
+    incenses: ["Dragon's Blood", "Cinnamon", "Clove (strong)"]
+    animals: ["Wolf", "Ram", "Scorpion", "Bull"]
+    concepts: ["Courage", "Conflict", "Strength", "Passion", "Willpower", "Protection"]
+    ritual_types: ["Protection", "Courage", "Conflict Resolution", "Strength", "Athletic Performance", "Justice"]
+
+  sun:
+    number: 6
+    hebrew: "TIPHARETH"
+    tarot: "The Sun"
+    element: "Fire (solar)"
+    zodiac: ["Leo"]
+    day: "Sunday"
+    hour_cycle: 6  # Sixth hour of Sun day
+    colors: ["Gold", "Yellow", "Orange", "Brilliant White"]
+    metals: ["Gold"]
+    stones: ["Sunstone", "Citrine", "Yellow Topaz", "Amber", "Diamond"]
+    herbs: ["Chamomile", "Calendula", "St. John's Wort", "Sunflower", "Frankincense"]
+    incenses: ["Frankincense", "Myrrh (blended)", "Copal"]
+    animals: ["Lion", "Phoenix", "Eagle", "Peacock"]
+    concepts: ["Consciousness", "Will", "Heart", "Success", "Recognition", "Leadership", "Healing"]
+    ritual_types: ["Success", "Recognition", "Healing", "Leadership", "Spiritual Illumination", "Heart Matters"]
+
+  venus:
+    number: 7
+    hebrew: "NETZACH"
+    tarot: "The Empress"
+    element: "Earth (fertile)"
+    zodiac: ["Taurus", "Libra"]
+    day: "Friday"
+    hour_cycle: 7  # Seventh hour of Venus day
+    colors: ["Green", "Pink", "Rose", "Emerald"]
+    metals: ["Copper", "Bronze"]
+    stones: ["Rose Quartz", "Emerald", "Jade", "Aventurine", "Copper"]
+    herbs: ["Rose", "Violet", "Lavender", "Apple", "Patchouli (sweet)"]
+    incenses: ["Rose", "Sandalwood", "Vanilla", "Amber"]
+    animals: ["Dove", "Swan", "Cat", "Sparrow"]
+    concepts: ["Love", "Beauty", "Art", "Harmony", "Relationships", "Pleasure", "Creativity"]
+    ritual_types: ["Love", "Beauty", "Harmony", "Relationships", "Art", "Creativity", "Pleasure"]
+
+  mercury:
+    number: 8
+    hebrew: "HOD"
+    tarot: "The Magician"
+    element: "Air (mental)"
+    zodiac: ["Gemini", "Virgo"]
+    day: "Wednesday"
+    hour_cycle: 8  # Eighth hour of Mercury day
+    colors: ["Yellow", "Orange", "Multi-colored", "Silver"]
+    metals: ["Mercury (quicksilver)", "Aluminum"]
+    stones: ["Citrine", "Yellow Jasper", "Agate", "Tiger's Eye"]
+    herbs: ["Lavender", "Mint", "Lemongrass", "Fennel", "Anise"]
+    incenses: ["Lavender", "Mint", "Sandalwood (light)"]
+    animals: ["Fox", "Magpie", "Serpent", "Butterfly"]
+    concepts: ["Communication", "Intellect", "Magic", "Travel", "Learning", "Adaptability"]
+    ritual_types: ["Communication", "Learning", "Travel", "Magic", "Business", "Technology"]
+
+  moon:
+    number: 9
+    hebrew: "YESOD"
+    tarot: "The High Priestess"
+    element: "Water (psychic)"
+    zodiac: ["Cancer"]
+    day: "Monday"
+    hour_cycle: 9  # Ninth hour of Moon day
+    colors: ["Silver", "White", "Pale Blue", "Sea Green"]
+    metals: ["Silver"]
+    stones: ["Moonstone", "Pearl", "Opal", "Selenite", "Clear Quartz"]
+    herbs: ["Jasmine", "Lily", "Rose (white)", "Chamomile", " mugwort"]
+    incenses: ["Jasmine", "Myrtle", "White Sandalwood"]
+    animals: ["Dog", "Cat", "Owl", "Crab", "Moth"]
+    concepts: ["Intuition", "Dreams", "Emotion", "Psychic Ability", "Subconscious", "Cycles"]
+    ritual_types: ["Psychic Development", "Dream Work", "Emotional Healing", "Intuition", "Feminine Power", "Children"]
+
+# Elemental Correspondences
+elemental_correspondences:
+  fire:
+    direction: "South"
+    time: "Noon"
+    season: "Summer"
+    archangel: "Michael"
+    planets: ["Sun", "Mars", "Jupiter"]
+    zodiac: ["Aries", "Leo", "Sagittarius"]
+    colors: ["Red", "Gold", "Orange"]
+    herbs: ["Cinnamon", "Clove", "Cayenne", "Dragon's Blood", "Sunflower"]
+    stones: ["Ruby", "Garnet", "Carnelian", "Obsidian", "Volcanic Glass"]
+    qualities: ["Will", "Action", "Passion", "Transformation", "Energy"]
+    ritual_types: ["Strength", "Courage", "Passion", "Transformation", "Banishing (active)"]
+
+  water:
+    direction: "West"
+    time: "Sunset"
+    season: "Autumn"
+    archangel: "Gabriel"
+    planets: ["Moon", "Venus", "Neptune"]
+    zodiac: ["Cancer", "Scorpio", "Pisces"]
+    colors: ["Blue", "Sea Green", "Silver", "Black"]
+    herbs: ["Rose", "Jasmine", "Lily", "Aloe", "Seaweed"]
+    stones: ["Amethyst", "Aquamarine", "Moonstone", "Pearl", "Sapphire"]
+    qualities: ["Emotion", "Intuition", "Healing", "Psychic Ability", "Love"]
+    ritual_types: ["Emotional Healing", "Love", "Psychic Development", "Intuition", "Dream Work"]
+
+  air:
+    direction: "East"
+    time: "Dawn"
+    season: "Spring"
+    archangel: "Raphael"
+    planets: ["Mercury", "Venus", "Uranus"]
+    zodiac: ["Gemini", "Libra", "Aquarius"]
+    colors: ["Yellow", "Light Blue", "White", "Pastels"]
+    herbs: ["Lavender", "Mint", "Sage", "Thyme", "Dandelion"]
+    stones: ["Citrine", "Yellow Topaz", "Aventurine", "Fluorite", "Clear Quartz"]
+    qualities: ["Intellect", "Communication", "Learning", "Movement", "Clarity"]
+    ritual_types: ["Communication", "Learning", "Mental Clarity", "Travel", "New Beginnings"]
+
+  earth:
+    direction: "North"
+    time: "Midnight"
+    season: "Winter"
+    archangel: "Auriel"
+    planets: ["Saturn", "Earth ( Herself)", "Venus (earth aspect)"]
+    zodiac: ["Taurus", "Virgo", "Capricorn"]
+    colors: ["Green", "Brown", "Black", "Forest Colors"]
+    herbs: ["Patchouli", "Vetiver", "Oak", "Sage (earth)", "Moss"]
+    stones: ["Green Jasper", "Black Tourmaline", "Obsidian", "Jet", "Hematite"]
+    qualities: ["Stability", "Prosperity", "Health", "Practicality", "Foundation"]
+    ritual_types: ["Prosperity", "Health", "Grounding", "Protection", "Stability", "Career"]
+
+# Ritual Timing Guidelines
+timing_guidelines:
+  planetary_hours:
+    calculation: "Each day has 12 daylight hours and 12 nighttime hours, divided by planetary rulers"
+    sequence: ["Saturn", "Jupiter", "Mars", "Sun", "Venus", "Mercury", "Moon"]
+    best_for:
+      success: "Sun hour on Sunday, or Venus hour on Friday"
+      protection: "Saturn hour on Saturday, or Mars hour on Tuesday"
+      wisdom: "Jupiter hour on Thursday, or Mercury hour on Wednesday"
+      love: "Venus hour on Friday, or Moon hour on Monday"
+      banishing: "Saturn hour, or Mars hour on Tuesday"
+
+  moon_phases:
+    new_moon:
+      activities: ["New beginnings", "Setting intentions", "Planning", "Seed planting"]
+      duration: "3 days centered on exact New Moon"
+    waxing_crescent:
+      activities: ["Growth", "Building momentum", "Attraction work"]
+      duration: "Days 4-7 after New Moon"
+    first_quarter:
+      activities: ["Overcoming obstacles", "Taking action", "Decision making"]
+      duration: "Days 8-11 after New Moon"
+    waxing_gibbous:
+      activities: ["Manifestation", "Power building", "Growth spells"]
+      duration: "Days 12-14 after New Moon"
+    full_moon:
+      activities: ["Peak power", "Charging tools", "Major workings", "Divination"]
+      duration: "3 days centered on exact Full Moon"
+    waning_gibbous:
+      activities: ["Banishing", "Releasing", "Cleansing", "Letting go"]
+      duration: "Days 18-21 after Full Moon"
+    last_quarter:
+      activities: ["Reflection", "Integration", "Balancing", "Shadow work"]
+      duration: "Days 22-25 after Full Moon"
+    waning_crescent:
+      activities: ["Rest", "Contemplation", "Deep work", "Ancestral connection"]
+      duration: "Days 26-29 after Full Moon"
+
+# Usage Notes for Agents:
+# - Always cross-reference planetary and elemental correspondences for enhanced timing
+# - Consider both number correspondence and planetary rulership for ritual planning
+# - Moon phase modifies all other correspondences
+# - Personal astrology (natal chart) can override general recommendations
+# - Intent and preparation matter more than perfect timing

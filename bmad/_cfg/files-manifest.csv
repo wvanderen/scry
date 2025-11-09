@@ -71,3 +71,5 @@ type,name,module,path,hash
 "agent","clauneck","standalone","bmad/standalone/agents/clauneck.md",""
 "agent","hekate-guide","standalone","bmad/standalone/agents/hekate-guide.md",""
 "agent","i-ching-oracle","standalone","bmad/standalone/agents/i-ching-oracle.md",""
+"agent","journal-guide","standalone","bmad/standalone/agents/journal-guide.md",""
+"agent","ritual-master","standalone","bmad/standalone/agents/ritual-master.md",""
