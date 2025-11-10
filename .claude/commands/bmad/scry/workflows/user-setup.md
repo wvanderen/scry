@@ -1,13 +1,16 @@
 ---
+name: 'user-setup'
 description: 'Scry workflow: user-setup'
 ---
 
-IT IS CRITICAL THAT YOU FOLLOW THESE STEPS - while staying in character as the current agent persona you may have loaded:
+Follow this workflow exactly. Do not improvise outside the prescribed steps.
 
-<steps CRITICAL="TRUE">
-1. Always LOAD the FULL @bmad/core/tasks/workflow.xml
-2. READ its entire contents - this is the CORE OS for EXECUTING the specific workflow-config @.bmad/scry/workflows/user-setup/workflow.yaml
-3. Pass the yaml path .bmad/scry/workflows/user-setup/workflow.yaml as 'workflow-config' parameter to the workflow.xml instructions
-4. Follow workflow.xml instructions EXACTLY as written to process and follow the specific workflow config and its instructions
-5. Save outputs after EACH section when generating any documents from templates
-</steps>
+<workflow-activation CRITICAL="TRUE">
+1. LOAD the workflow executor at @.bmad/core/tasks/workflow.xml.
+2. READ the entire workflow config @.bmad/scry/workflows/user-setup/workflow.yaml and pass it as 'workflow-config' to the executor.
+3. Follow workflow.xml instructions exactly; do not reorder or skip tasks.
+4. Consult the detailed instructions at @.bmad/scry/workflows/user-setup/instructions.md.
+5. Use the template at @.bmad/scry/workflows/user-setup/template.md.
+6. Validate outputs against @.bmad/scry/workflows/user-setup/checklist.md.
+7. Persist deliverables after each section and halt if validation fails.
+</workflow-activation>
