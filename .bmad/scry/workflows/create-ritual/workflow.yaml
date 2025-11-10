@@ -1,0 +1,31 @@
+# Create Ritual - Workflow Configuration
+name: create-ritual
+description: "Creates documents that can be used for ritual practice instruction and logging to be used within the scry BMAD module"
+author: "Lem"
+
+# Critical variables from config
+config_source: '{project-root}/.bmad/scry/config.yaml'
+output_folder: '{project-root}/.bmad/scry/scry-knowledge/rituals'
+user_name: '{config_source}:user_name'
+communication_language: '{config_source}:communication_language'
+date: system-generated
+
+# Module path and component files
+installed_path: '{project-root}/.bmad/scry/workflows/create-ritual'
+template: '{installed_path}/template.md'
+instructions: '{installed_path}/instructions.md'
+validation: '{installed_path}/checklist.md'
+
+# Optional input docs
+recommended_inputs:
+  - existing_rituals: '{project-root}/.bmad/scry/workflows/'
+  - ritual_templates: '{installed_path}/ritual-templates/'
+
+# Output configuration
+default_output_file: '{output_folder}/{{ritual_filename}}.md'
+validation_output_file: '{output_folder}/{{ritual_filename}}-validation-report.md'
+
+# Invocation control
+standalone: true
+
+# Web bundle configuration
