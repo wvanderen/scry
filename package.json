@@ -1,0 +1,12 @@
+{
+  "name": "scry-bmad-module",
+  "version": "1.0.0",
+  "description": "Scry BMAD module for spiritual practice and divination",
+  "scripts": {
+    "bmad:compile": "node compile-scry.js",
+    "bmad:install": "npm run bmad:compile"
+  },
+  "keywords": ["bmad", "scry", "spiritual", "divination"],
+  "author": "Lem",
+  "license": "MIT"
+}

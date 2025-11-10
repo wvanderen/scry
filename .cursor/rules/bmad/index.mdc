@@ -113,13 +113,6 @@ BMAD rules have been installed to: `.cursor/rules/bmad/`
 
 ### SCRY
 
-**Agents:**
-- @bmad/scry/agents/instructions - instructions
-- @bmad/scry/agents/journal-guide - journal-guide
-- @bmad/scry/agents/instructions - instructions
-- @bmad/scry/agents/README - README
-- @bmad/scry/agents/ritual-master - ritual-master
-
 **Workflows:**
 - @bmad/scry/workflows/user-setup - user-setup
 
