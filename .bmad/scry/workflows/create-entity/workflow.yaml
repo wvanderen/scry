@@ -1,0 +1,33 @@
+# Create Entity Agent - Workflow Configuration
+name: "create-entity"
+description: "Interactive workflow for creating specialized entity agents (deities, oracles, spiritual guides) with authentic persona, voice, and powers. Supports research-driven collaborative development."
+author: "Lem via BMAD Builder"
+
+# Critical variables from config
+config_source: "{project-root}/.bmad/scry/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+communication_language: "{config_source}:communication_language"
+date: system-generated
+
+# Module path and component files
+installed_path: "{project-root}/.bmad/scry/workflows/create-entity"
+template: "{installed_path}/template.md"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"
+
+# Output configuration - Creates entity agent in entities folder
+# Pattern: .bmad/scry/entities/{{entity_name}}/{{entity_name}}.agent.yaml
+entity_output_folder: "{project-root}/.bmad/scry/entities/{{entity_name}}"
+default_output_file: "{entity_output_folder}/{{entity_name}}.agent.yaml"
+
+# Optional sidecar folder for entity resources
+sidecar_folder: "{entity_output_folder}/{{entity_name}}-sidecar"
+
+# Reference to existing entity examples for pattern matching
+recommended_inputs:
+  - thoth_example: "{project-root}/.bmad/scry/entities/thoth.agent.yaml"
+  - hekate_example: "{project-root}/.bmad/scry/entities/hekate-guide/hekate-guide.agent.yaml"
+
+# Invocation control
+standalone: true
