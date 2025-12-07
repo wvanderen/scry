@@ -1,0 +1,13 @@
+{
+    "name": "Scry",
+    "status": "backburner",           
+    "season": "Scoping phase",
+    "arc": "Ritual & Life",
+    "priority": 2,                    
+    "lastUpdated": "2025-11-25T17:11:00-06:00",
+    "nextAction": "Organize modular project structure and PRD",
+    "tags": ["app", "personal", "ritual", "spiritual"],
+    "repoUrl": "git@github.com:lem/scry.git",
+    "notesPath": "dev-notes.md"       
+  }
+  
